@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color:lightpink;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        form{
+            background-color:lavender;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 50px 50px;
+            border-width: 20px;
+            border-color:mintcream;
+            border-style: solid;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>SURVEY FORM</h1>
+        <div style="padding: 15px;">
+        <label for="name"><b>Name: </b></label>
+        <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div style="padding: 15px;">
+            <label for="email"><b>Email: </b></label>
+            <input type="email" placeholder="Enter your Email" required>
+        </div>
+        <div style="padding: 15px;">
+            <label for="age"><b>Age: </b></label>
+            <input type="age" placeholder="Enter your age" required>
+        </div>
+        <div style="padding: 15px;">
+            <label for="role"><b>Which option best describes you?</b></label>
+            <select name="role" id="role" style="display: block; margin-left: 90px; padding: 10px 100px;margin-top: 25px;">
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+        <div style="padding: 15px;">
+            <label for="recommand" style="display: block;"><b>Would you recommend Mern Stack to a friend?</b></label><br>
+            <input type="radio" name="a" >Yes 
+            <input type="radio" name="a">No 
+            <input type="radio" name="a">Maybe 
+        </div>
+        <div style="padding: 15px;">
+            <label for="languages" style="display: block;"><b>Languages and Frameworks known</b>
+            <small>(Check all that apply)</small></label><br>
+            <input type="checkbox">C
+            <input type="checkbox">C++
+            <input type="checkbox">JAVA
+            <input type="checkbox">PYTHON
+            <input type="checkbox">DJANGO
+            <input type="checkbox">DATA SCIENTIST
+            <input type="checkbox">DATA ANALYST
+
+        </div>
+        <div style="padding: 15px;">
+            <label for="comment" style="display: block;"><b>Any comments or suggestions</b></label><br>
+            <textarea name="comment" id="" placeholder="Enter your comment here" style="width: 380px;height: 100px;" required></textarea>
+        </div>
+        <br>
+        <button type="submit" value="submit" style="width: 100px;border-width: 3px;border-radius: 5px;background-color: brown;">Submit</button>
+    </form>
+    
+</body>
+</html>
